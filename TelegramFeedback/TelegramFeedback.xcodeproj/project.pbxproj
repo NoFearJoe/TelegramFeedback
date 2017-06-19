@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		968E81A41EF814490044BA8C /* TelegramFeedback.h in Headers */ = {isa = PBXBuildFile; fileRef = 968E81A21EF814490044BA8C /* TelegramFeedback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		968E81AE1EF814E80044BA8C /* TelegramFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968E81AD1EF814E80044BA8C /* TelegramFeedback.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		968E819F1EF814490044BA8C /* TelegramFeedback.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TelegramFeedback.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		968E81A21EF814490044BA8C /* TelegramFeedback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TelegramFeedback.h; sourceTree = "<group>"; };
 		968E81A31EF814490044BA8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		968E81AD1EF814E80044BA8C /* TelegramFeedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelegramFeedback.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 		968E81AB1EF8147D0044BA8C /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				968E81AD1EF814E80044BA8C /* TelegramFeedback.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -120,6 +123,7 @@
 					968E819E1EF814490044BA8C = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 485UNLA592;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -156,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				968E81AE1EF814E80044BA8C /* TelegramFeedback.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +271,7 @@
 		968E81A81EF814490044BA8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 485UNLA592;
@@ -279,6 +285,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ilyakharabet.TelegramFeedback;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -286,6 +293,7 @@
 		968E81A91EF814490044BA8C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 485UNLA592;
@@ -322,6 +330,7 @@
 				968E81A91EF814490044BA8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
